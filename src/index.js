@@ -2,6 +2,10 @@ import startServer from "./startServer";
 import typeDefs from "./graphql/typeDefs";
 import resolvers from "./graphql/resolvers";
 
+const firebase = require("firebase");
+const firebase_admin = require("firebase-admin");
+require("firebase/firestore");
+
 //  Toda request é POST
 //  Toda request bate no MESMO endpoint (/graphql)
 
